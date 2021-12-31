@@ -1,3 +1,3 @@
 class Tenis:
     def score(self):
-        pass
+        return "inicio de partido"
