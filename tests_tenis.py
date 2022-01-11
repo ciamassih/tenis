@@ -12,12 +12,6 @@ class PartidoTenis(unittest.TestCase):
         score1 = Score(15)
         self.assertEqual(score1.puntos, 15)
 
-    def test_puntaje_en_0_con_los_2_jugadores(self):
-        score1 = Score(0)
-        score2 = Score(0)
-        self.assertEqual(score1.puntos, 0)
-        self.assertEqual(score2.puntos, 0)
-
     def test_puntaje_en_15_a_30(self):
         score1 = Score(15)
         score1.anotacion(score1)
@@ -32,3 +26,10 @@ class PartidoTenis(unittest.TestCase):
         score1 = Score(40)
         score1.ganarset(score1)
         self.assertEqual(score1.puntos, "Set ganado")
+
+    def test_puntaje_en_0_primer_punto_jugador_1(self):
+        score1 = Score(0)
+        score2 = Score(0)
+        score1.anotacion(score1)
+        self.assertEqual(score1.puntos, 15)
+        self.assertEqual(score2.puntos, 0)
