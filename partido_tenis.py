@@ -14,3 +14,8 @@ class Score:
             self.puntos = "Set ganado por el jugador 1"
         elif (score2.puntos >= 40) and (score1.puntos <= 30):
             self.puntos = "Set ganado por el jugador 2"
+
+    def deuce(self, score1, score2):
+        if (score1.puntos == 40) and (score2.puntos == 40):
+            score1.puntos = "Deuce"
+            score2.puntos = "Deuce"
