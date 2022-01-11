@@ -6,8 +6,10 @@ class Score:
     def anotacion(self, score):
         if (score.puntos >= 0) and (score.puntos <= 29):
             self.puntos += 15
-        elif (score.puntos >= 30):
+        elif (score.puntos == 30):
             self.puntos += 10
+        elif (score.puntos == 40):
+            self.puntos = "Advantage"
 
     def ganarset(self, score1, score2):
         if (score1.puntos >= 40) and (score2.puntos <= 30):

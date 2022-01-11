@@ -54,4 +54,4 @@ class PartidoTenis(unittest.TestCase):
         score2 = Score(40)
         score1.anotacion(score1)
         self.assertEqual(score1.puntos, "Advantage")
-        self.assertEqual(score2.puntos, "Deuce")
+        self.assertEqual(score2.puntos, 40)
