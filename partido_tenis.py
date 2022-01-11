@@ -1,4 +1,5 @@
 class Score:
 
-    def __init__(self, player1):
-        self.player1 = 0
+    def __init__(self, puntos):
+        self.puntos = 0
+
