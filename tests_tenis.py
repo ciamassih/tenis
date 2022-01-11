@@ -25,7 +25,7 @@ class PartidoTenis(unittest.TestCase):
 
     def test_puntaje_en_30_a_40(self):
         score1 = Score(30)
-        score1.anotacion(10)
+        score1.anotacion(score1)
         self.assertEqual(score1.puntos, 40)
 
     def test_punto_ganador(self):
