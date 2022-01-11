@@ -74,3 +74,10 @@ class PartidoTenis(unittest.TestCase):
         score2 = Score("Advantage")
         score2.ganarsetadvantage(score1, score2)
         self.assertEqual(score2.puntos, "Set ganado por el jugador 2")
+
+    def test_advantage_jugador1_volviendo_a_deuce(self):
+        score1 = Score("Advantage")
+        score2 = Score(40)
+        score2.anotacion(score2)
+        self.assertEqual(score1.puntos, "Deuce")
+        self.assertEqual(score2.puntos, "Deuce")
