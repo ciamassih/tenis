@@ -5,3 +5,6 @@ class Score:
 
     def anotacion(self, cantidad):
         self.puntos += cantidad
+
+    def ganarset(self):
+        pass
