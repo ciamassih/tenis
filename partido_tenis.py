@@ -21,6 +21,12 @@ class Score:
         if (score1.puntos == 40) and (score2.puntos == 40):
             score1.puntos = "Deuce"
             score2.puntos = "Deuce"
+        elif (score1.puntos == "Advantage") and score2.anotacion:
+            score1.puntos = "Deuce"
+            score2.puntos = "Deuce"
+        elif (score2.puntos == "Advantage") and score1.anotacion:
+            score1.puntos = "Deuce"
+            score2.puntos = "Deuce"
 
     def ganarsetadvantage(self, score1, score2):
         if (score1.puntos == "Advantage") and (score2.puntos == 40):
