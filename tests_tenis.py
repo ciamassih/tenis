@@ -30,5 +30,5 @@ class PartidoTenis(unittest.TestCase):
 
     def test_punto_ganador(self):
         score1 = Score(40)
-        score1.ganarset()
+        score1.ganarset(score1)
         self.assertEqual(score1.puntos, "Set ganado")
