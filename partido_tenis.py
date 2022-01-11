@@ -4,4 +4,4 @@ class Score:
         self.puntos = puntos
 
     def anotacion(self, cantidad):
-        pass
+        self.puntos += 15
